@@ -1,54 +1,47 @@
 # Aunt Clo WiFi - Recommendations (July 2026)
 
-## Situation Summary
-- AT&T Fiber (recent speed upgrade)
-- Old Apple router + 1 booster in dining room
-- Weak signal downstairs + garage after upgrade
-- Main computer upstairs
+## Confirmed Hardware
+- **Main Gateway**: AT&T All-Fi Hub **BGW530-900**
+- **Old Router**: Apple AirPort Extreme **A1521** (6th generation)
+- **Booster**: One unit in dining room
+- **ISP**: AT&T Fiber (recent speed upgrade)
 
-## Top Recommendations
+## Problem
+WiFi signal weakened downstairs + garage after the AT&T upgrade. The old Apple AirPort Extreme is likely limiting coverage and performance.
 
-### 1. Easiest: AT&T Extended Wi-Fi Coverage Service (Mesh Extenders)
-- AT&T offers official mesh extenders that work with their gateway.
-- Can be included or low monthly cost depending on plan.
-- Pros: Official support, easy install, lifetime replacement on some plans.
-- Cons: Monthly fee on some plans, less flexible than third-party.
+## Recommendations
 
-### 2. Best Overall Third-Party: Eero System
-- **Recommended**: Eero 7 or Eero Pro 7 (3-pack)
-- Excellent app, very reliable, good AT&T compatibility.
-- Many AT&T Fiber users successfully use Eero mesh.
+### 1. Easiest Option: AT&T Official Mesh Extenders
+- Use AT&T’s **Extended Wi-Fi Coverage Service** with the BGW530-900.
+- They can add official All-Fi mesh extenders that work seamlessly with the gateway.
+- Pros: Simple, supported by AT&T, lifetime replacement on many plans.
+- Cons: Monthly fee possible depending on plan.
 
-### 3. Best Value / Performance: TP-Link Deco
-- **Recommended**: TP-Link Deco 7 Pro (BE63) or Deco XE series
-- Strong performance, often praised in 2026 reviews.
-- Good price-to-performance.
+### 2. Best Long-Term Solution: Replace the Apple Router with a Modern Mesh System
+**Recommended systems**:
+- **Eero 7** or **Eero Pro 7** (3-pack) — Best overall for ease of use and reliability with AT&T.
+- **TP-Link Deco 7 Pro (BE63)** — Excellent performance and value in 2026 reviews.
 
-### 4. Strong Alternative: Google Nest Wifi Pro
-- Good coverage and speeds.
-- Clean design, reliable app.
+**Important Step**: Put the **BGW530-900** into **IP Passthrough** mode so the new mesh system handles routing.
 
-## Important Technical Step (Strongly Recommended)
-Put the AT&T gateway into **IP Passthrough** mode and use the new mesh system as the main router. This avoids double NAT and gives much better performance.
+### 3. Quick & Cheap Option
+Keep the current setup but:
+- Move the Apple AirPort to a more central location.
+- Add one or two good Wi-Fi 6/6E extenders.
+- This is a band-aid solution — not recommended long-term.
 
-Steps (general):
-1. Log into AT&T gateway (usually 192.168.1.254)
-2. Go to **Firewall → IP Passthrough**
-3. Set Allocation Mode to **Passthrough**
-4. Set Passthrough Mode to **DHCPS-fixed**
-5. Select the MAC address of the new mesh router
+## IP Passthrough Guide (BGW530-900)
+1. Connect a computer to the AT&T gateway.
+2. Go to `192.168.1.254` in a browser.
+3. Log in (default password is on the sticker on the device).
+4. Go to **Firewall → IP Passthrough**.
+5. Set:
+   - Allocation Mode → **Passthrough**
+   - Passthrough Mode → **DHCPS-fixed**
+6. Select the MAC address of the new mesh router.
+7. Save and reboot the gateway.
 
-## Quick Decision Guide
-
-| Priority                    | Recommended Solution       | Difficulty | Cost          | Notes                              |
-|----------------------------|----------------------------|------------|---------------|------------------------------------|
-| Easiest / Official         | AT&T Mesh Extenders        | Very Easy  | Low–Medium    | Good if she wants minimal hassle   |
-| Best balance               | Eero 7 / Pro 7             | Easy       | Medium        | Most recommended for AT&T users    |
-| Best performance/value     | TP-Link Deco BE63          | Easy       | Good          | Top-rated in 2026 reviews          |
-| Already has Apple gear     | Keep Apple + better mesh   | Medium     | Medium        | Possible but not ideal             |
-
-## Next Steps
-1. Confirm exact modem + router models from the photos
-2. Decide between staying with AT&T mesh vs third-party
-3. If going third-party → plan IP Passthrough setup
-
+## Recommended Action
+1. Confirm if she wants the simplest solution (AT&T mesh) or best performance (third-party mesh).
+2. If choosing third-party → get a 3-pack mesh system and configure IP Passthrough on the BGW530-900.
+3. Retire the old Apple AirPort Extreme.
