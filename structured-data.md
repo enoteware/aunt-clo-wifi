@@ -32,3 +32,16 @@
 ## Notes
 - Conversation started around birthday card context, then moved to WiFi issue.
 - Aunt Clo is not in a rush ("Take your time").
+
+## Current Hardware Inventory
+
+| Device              | Brand/Model          | Notes                                      | Status          |
+|---------------------|----------------------|--------------------------------------------|-----------------|
+| Router              | Apple (unknown model)| Several years old                          | In use          |
+| Booster / Extender  | Unknown              | Located in dining room                     | In use          |
+| Modem / Gateway     | AT&T (combo unit)    | Appears to be modem + router combo         | In use          |
+| ISP                 | AT&T Fiber           | Recently upgraded for higher speed         | Active          |
+
+**Photos received**: Bottom of Apple router + modem (model numbers visible in images but not yet transcribed).
+
+**Open question**: Confirm exact model numbers from the photos (router + modem).
